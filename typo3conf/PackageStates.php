@@ -475,6 +475,15 @@ return array (
       array (
       ),
     ),
+    'fifa_stats' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/fifa_stats/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'extension_builder' => 
     array (
       'state' => 'active',
@@ -644,15 +653,6 @@ return array (
       'composerName' => 'typo3/cms-workspaces',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/workspaces/',
-      'classesPath' => 'Classes/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'fifa_stats' => 
-    array (
-      'state' => 'inactive',
-      'packagePath' => 'typo3conf/ext/fifa_stats/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (
