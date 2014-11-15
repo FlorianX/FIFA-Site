@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-15T14:38:15Z" product-name="fifa_stats">
+		<header/>
+		<body>
+			<trans-unit id="tx_fifastats_domain_model_player">
+				<source>Player</source>
+			</trans-unit>
+			<trans-unit id="fe_users.tx_extbase_type.Tx_FifaStats_Player">
+				<source>fifaStats Player</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_club">
+				<source>Club</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_club.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_club.league">
+				<source>League</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_league">
+				<source>League</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_league.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_league.clubs">
+				<source>Clubs</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_league.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_country.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_country.leagues">
+				<source>Leagues</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
