@@ -17,5 +17,9 @@ $GLOBALS['TYPO3_CONF_VARS']['DB']['host']     = '127.0.0.1';
 $GLOBALS['TYPO3_CONF_VARS']['DB']['port'] = 3306;
 $GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'root';
 $GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = '';
+
+//install tool pw
+$GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = '<YOUR HASHED PW>';
+
 ?>
 ```

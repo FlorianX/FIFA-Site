@@ -3,7 +3,6 @@ return array(
     'BE' => array(
         'debug' => FALSE,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$P$CsLTzWDApPmUoIRnmSXQAlhj919zBx/',
         'loginSecurityLevel' => 'rsa',
     ),
     'DB' => array(
