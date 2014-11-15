@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-15T15:29:10Z" product-name="fifa_stats">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-15T17:13:11Z" product-name="fifa_stats">
 		<header/>
 		<body>
 			<trans-unit id="tx_fifastats_domain_model_player">
 				<source>Player</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_player.user_name">
+				<source>User Name</source>
+			</trans-unit>
+			<trans-unit id="tx_fifastats_domain_model_player.real_name">
+				<source>Real Name</source>
 			</trans-unit>
 			<trans-unit id="tx_fifastats_domain_model_club">
 				<source>Club</source>

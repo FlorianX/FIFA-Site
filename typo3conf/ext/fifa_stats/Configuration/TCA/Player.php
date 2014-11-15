@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $GLOBALS['TCA']['tx_fifastats_domain_model_player'] = array(
 	'ctrl' => $GLOBALS['TCA']['tx_fifastats_domain_model_player']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, ',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, user_name, real_name',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, user_name, real_name, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -97,5 +97,24 @@ $GLOBALS['TCA']['tx_fifastats_domain_model_player'] = array(
 			),
 		),
 
+		'user_name' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:fifa_stats/Resources/Private/Language/locallang_db.xlf:tx_fifastats_domain_model_player.user_name',
+			'config' => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim,required'
+			),
+		),
+		'real_name' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:fifa_stats/Resources/Private/Language/locallang_db.xlf:tx_fifastats_domain_model_player.real_name',
+			'config' => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim,required'
+			),
+		),
+		
 	),
 );

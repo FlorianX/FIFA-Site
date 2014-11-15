@@ -53,7 +53,46 @@ class PlayerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	/**
 	 * @test
 	 */
-	public function dummyTestToNotLeaveThisFileEmpty() {
-		$this->markTestIncomplete();
+	public function getUserNameReturnsInitialValueForString() {
+		$this->assertSame(
+			'',
+			$this->subject->getUserName()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setUserNameForStringSetsUserName() {
+		$this->subject->setUserName('Conceived at T3CON10');
+
+		$this->assertAttributeEquals(
+			'Conceived at T3CON10',
+			'userName',
+			$this->subject
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function getRealNameReturnsInitialValueForString() {
+		$this->assertSame(
+			'',
+			$this->subject->getRealName()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setRealNameForStringSetsRealName() {
+		$this->subject->setRealName('Conceived at T3CON10');
+
+		$this->assertAttributeEquals(
+			'Conceived at T3CON10',
+			'realName',
+			$this->subject
+		);
 	}
 }

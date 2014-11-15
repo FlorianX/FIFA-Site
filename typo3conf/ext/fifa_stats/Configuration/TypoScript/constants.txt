@@ -1,0 +1,15 @@
+
+module.tx_fifastats {
+	view {
+		# cat=module.tx_fifastats/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:fifa_stats/Resources/Private/Backend/Templates/
+		# cat=module.tx_fifastats/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:fifa_stats/Resources/Private/Backend/Partials/
+		# cat=module.tx_fifastats/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:fifa_stats/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_fifastats//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

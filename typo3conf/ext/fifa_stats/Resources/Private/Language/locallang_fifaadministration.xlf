@@ -3,11 +3,11 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-15T17:13:11Z" product-name="fifa_stats">
 		<header/>
 		<body>
-			<trans-unit id="name.description">
-				<source>name</source>
+			<trans-unit id="mlang_tabs_tab">
+				<source></source>
 			</trans-unit>
-			<trans-unit id="league.description">
-				<source>league</source>
+			<trans-unit id="mlang_labels_tabdescr">
+				<source></source>
 			</trans-unit>
 		</body>
 	</file>

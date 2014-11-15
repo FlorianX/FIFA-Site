@@ -1,0 +1,12 @@
+
+ # Module configuration
+module.tx_fifastats {
+	persistence {
+		storagePid = {$module.tx_fifastats.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_fifastats.view.templateRootPath}
+		partialRootPath = {$module.tx_fifastats.view.partialRootPath}
+		layoutRootPath = {$module.tx_fifastats.view.layoutRootPath}
+	}
+}

@@ -3,18 +3,18 @@
         {
             "config": {
                 "position": [
-                    372,
-                    97
+                    539,
+                    60
                 ]
             },
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
                     "_default0_list": true,
-                    "_default1_show": false,
-                    "_default2_new_create": false,
-                    "_default3_edit_update": false,
-                    "_default4_delete": false,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
                     "customActions": []
                 },
                 "name": "Player",
@@ -26,13 +26,34 @@
                     "categorizable": false,
                     "description": "",
                     "mapToTable": "",
-                    "parentClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\BackendUser",
+                    "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
                     "uid": "1255339131636"
                 },
                 "propertyGroup": {
-                    "properties": []
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "userName",
+                            "propertyType": "String",
+                            "uid": "607649767055"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "realName",
+                            "propertyType": "String",
+                            "uid": "119819569369"
+                        }
+                    ]
                 },
                 "relationGroup": {
                     "relations": []
@@ -49,11 +70,11 @@
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
-                    "_default2_new_create": false,
-                    "_default3_edit_update": false,
-                    "_default4_delete": false,
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
                     "customActions": []
                 },
                 "name": "Club",
@@ -110,11 +131,11 @@
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
-                    "_default2_new_create": false,
-                    "_default3_edit_update": false,
-                    "_default4_delete": false,
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
                     "customActions": []
                 },
                 "name": "League",
@@ -181,11 +202,11 @@
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
-                    "_default2_new_create": false,
-                    "_default3_edit_update": false,
-                    "_default4_delete": false,
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
                     "customActions": []
                 },
                 "name": "Country",
@@ -234,7 +255,18 @@
         }
     ],
     "properties": {
-        "backendModules": [],
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "",
+                "key": "fifaAdministration",
+                "mainModule": "web",
+                "name": "FIFA Administration",
+                "tabLabel": ""
+            }
+        ],
         "description": "",
         "emConf": {
             "category": "plugin",
@@ -318,7 +350,7 @@
         }
     ],
     "log": {
-        "last_modified": "2014-11-15 03:29",
+        "last_modified": "2014-11-15 05:13",
         "extension_builder_version": "6.2.0",
         "be_user": " (1)"
     }

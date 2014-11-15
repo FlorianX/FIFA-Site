@@ -29,17 +29,17 @@ namespace TYPO3\FifaStats\Controller;
  ***************************************************************/
 
 /**
- * PlayerController
+ * LeagueController
  */
-class PlayerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+class LeagueController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
 	/**
-	 * playerRepository
+	 * leagueRepository
 	 * 
-	 * @var \TYPO3\FifaStats\Domain\Repository\PlayerRepository
+	 * @var \TYPO3\FifaStats\Domain\Repository\LeagueRepository
 	 * @inject
 	 */
-	protected $playerRepository = NULL;
+	protected $leagueRepository = NULL;
 
 	/**
 	 * action list
@@ -47,75 +47,75 @@ class PlayerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 	 * @return void
 	 */
 	public function listAction() {
-		$players = $this->playerRepository->findAll();
-		$this->view->assign('players', $players);
+		$leagues = $this->leagueRepository->findAll();
+		$this->view->assign('leagues', $leagues);
 	}
 
 	/**
 	 * action show
 	 * 
-	 * @param \TYPO3\FifaStats\Domain\Model\Player $player
+	 * @param \TYPO3\FifaStats\Domain\Model\League $league
 	 * @return void
 	 */
-	public function showAction(\TYPO3\FifaStats\Domain\Model\Player $player) {
-		$this->view->assign('player', $player);
+	public function showAction(\TYPO3\FifaStats\Domain\Model\League $league) {
+		$this->view->assign('league', $league);
 	}
 
 	/**
 	 * action new
 	 * 
-	 * @param \TYPO3\FifaStats\Domain\Model\Player $newPlayer
-	 * @ignorevalidation $newPlayer
+	 * @param \TYPO3\FifaStats\Domain\Model\League $newLeague
+	 * @ignorevalidation $newLeague
 	 * @return void
 	 */
-	public function newAction(\TYPO3\FifaStats\Domain\Model\Player $newPlayer = NULL) {
-		$this->view->assign('newPlayer', $newPlayer);
+	public function newAction(\TYPO3\FifaStats\Domain\Model\League $newLeague = NULL) {
+		$this->view->assign('newLeague', $newLeague);
 	}
 
 	/**
 	 * action create
 	 * 
-	 * @param \TYPO3\FifaStats\Domain\Model\Player $newPlayer
+	 * @param \TYPO3\FifaStats\Domain\Model\League $newLeague
 	 * @return void
 	 */
-	public function createAction(\TYPO3\FifaStats\Domain\Model\Player $newPlayer) {
+	public function createAction(\TYPO3\FifaStats\Domain\Model\League $newLeague) {
 		$this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
-		$this->playerRepository->add($newPlayer);
+		$this->leagueRepository->add($newLeague);
 		$this->redirect('list');
 	}
 
 	/**
 	 * action edit
 	 * 
-	 * @param \TYPO3\FifaStats\Domain\Model\Player $player
-	 * @ignorevalidation $player
+	 * @param \TYPO3\FifaStats\Domain\Model\League $league
+	 * @ignorevalidation $league
 	 * @return void
 	 */
-	public function editAction(\TYPO3\FifaStats\Domain\Model\Player $player) {
-		$this->view->assign('player', $player);
+	public function editAction(\TYPO3\FifaStats\Domain\Model\League $league) {
+		$this->view->assign('league', $league);
 	}
 
 	/**
 	 * action update
 	 * 
-	 * @param \TYPO3\FifaStats\Domain\Model\Player $player
+	 * @param \TYPO3\FifaStats\Domain\Model\League $league
 	 * @return void
 	 */
-	public function updateAction(\TYPO3\FifaStats\Domain\Model\Player $player) {
+	public function updateAction(\TYPO3\FifaStats\Domain\Model\League $league) {
 		$this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
-		$this->playerRepository->update($player);
+		$this->leagueRepository->update($league);
 		$this->redirect('list');
 	}
 
 	/**
 	 * action delete
 	 * 
-	 * @param \TYPO3\FifaStats\Domain\Model\Player $player
+	 * @param \TYPO3\FifaStats\Domain\Model\League $league
 	 * @return void
 	 */
-	public function deleteAction(\TYPO3\FifaStats\Domain\Model\Player $player) {
+	public function deleteAction(\TYPO3\FifaStats\Domain\Model\League $league) {
 		$this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
-		$this->playerRepository->remove($player);
+		$this->leagueRepository->remove($league);
 		$this->redirect('list');
 	}
 

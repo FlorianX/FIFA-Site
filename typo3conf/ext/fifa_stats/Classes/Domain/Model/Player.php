@@ -31,7 +31,60 @@ namespace TYPO3\FifaStats\Domain\Model;
 /**
  * Player
  */
-class Player extends \TYPO3\CMS\Extbase\Domain\Model\BackendUser {
+class Player extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
-	
+	/**
+	 * userName
+	 * 
+	 * @var string
+	 * @validate NotEmpty
+	 */
+	protected $userName = '';
+
+	/**
+	 * realName
+	 * 
+	 * @var string
+	 * @validate NotEmpty
+	 */
+	protected $realName = '';
+
+	/**
+	 * Returns the userName
+	 * 
+	 * @return string $userName
+	 */
+	public function getUserName() {
+		return $this->userName;
+	}
+
+	/**
+	 * Sets the userName
+	 * 
+	 * @param string $userName
+	 * @return void
+	 */
+	public function setUserName($userName) {
+		$this->userName = $userName;
+	}
+
+	/**
+	 * Returns the realName
+	 * 
+	 * @return string $realName
+	 */
+	public function getRealName() {
+		return $this->realName;
+	}
+
+	/**
+	 * Sets the realName
+	 * 
+	 * @param string $realName
+	 * @return void
+	 */
+	public function setRealName($realName) {
+		$this->realName = $realName;
+	}
+
 }

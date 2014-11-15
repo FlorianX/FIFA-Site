@@ -1,21 +1,11 @@
-
-config.tx_extbase{
-    persistence{
-        classes{
-
-            TYPO3\CMS\Extbase\Domain\Model\BackendUser {
-                subclasses {
-                    Tx_FifaStats_Player = TYPO3\FifaStats\Domain\Model\Player
-					
-          		}
-            }
-            TYPO3\FifaStats\Domain\Model\Player {
-                mapping {
-                    tableName = be_users
-                    recordType = Tx_FifaStats_Player
-                }
-            }
-            
-    	}
+ # Module configuration
+module.tx_fifastats {
+    persistence {
+        storagePid =
+    }
+    view {
+        templateRootPath = EXT:fifa_stats/Resources/Private/Backend/Templates/
+        partialRootPath = EXT:fifa_stats/Resources/Private/Backend/Partials/
+        layoutRootPath = EXT:fifa_stats/Resources/Private/Backend/Layouts/
     }
 }
