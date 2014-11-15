@@ -3,7 +3,7 @@ config.tx_extbase{
     persistence{
         classes{
 
-            TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+            TYPO3\CMS\Extbase\Domain\Model\BackendUser {
                 subclasses {
                     Tx_FifaStats_Player = TYPO3\FifaStats\Domain\Model\Player
 					
@@ -11,7 +11,7 @@ config.tx_extbase{
             }
             TYPO3\FifaStats\Domain\Model\Player {
                 mapping {
-                    tableName = fe_users
+                    tableName = be_users
                     recordType = Tx_FifaStats_Player
                 }
             }

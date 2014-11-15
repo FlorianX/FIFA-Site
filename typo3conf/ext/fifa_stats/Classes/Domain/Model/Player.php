@@ -31,7 +31,7 @@ namespace TYPO3\FifaStats\Domain\Model;
 /**
  * Player
  */
-class Player extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+class Player extends \TYPO3\CMS\Extbase\Domain\Model\BackendUser {
 
 	
 }
