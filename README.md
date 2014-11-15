@@ -21,5 +21,7 @@ $GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = '';
 //install tool pw
 $GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = '<YOUR HASHED PW>';
 
+// encryptionKey
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['encryptionKey'] = '<YOUR KEY>';
 ?>
 ```

@@ -48,7 +48,6 @@ return array(
         'devIPmask' => '',
         'displayErrors' => 0,
         'enableDeprecationLog' => FALSE,
-        'encryptionKey' => 'cf199ab20b94c2d5a1a9fa96dbbf491d81bf3811da11cd99af9b936048c8908c6b7e4dc66326d135f5a6a4826c69cfd4',
         'isInitialInstallationInProgress' => FALSE,
         'sitename' => 'Fifa ',
         'sqlDebug' => 0,
